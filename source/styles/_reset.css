@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   overflow-wrap: break-word;
-  hyphens: auto;
 }
 
 audio, canvas, iframe, img, object, picture, svg, video {
@@ -13,3 +12,4 @@ audio, canvas, iframe, img, object, picture, svg, video {
 input, button, textarea, select {
   font: inherit;
 }
+

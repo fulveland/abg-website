@@ -33,19 +33,16 @@ task "build", "Compile everything", ()->
     content = template.replace "PAGE CONTENT GOES HERE", content
     writeFile dest, content
 
-  # Scripts
-  scripts = glob.sync "source/scripts/**/*.js"
-                .map readFile
-                .join "\n\n"
-  writeFile "public/scripts.js", scripts
-
   # Styles
   styles = glob.sync "source/styles/**/*.css"
                .map readFile
                .join "\n\n"
-  processed = postcss(plugins).process styles
-  processed.warnings().forEach (w)-> log red w.toString()
-  writeFile "public/styles.css", processed.css
+  try
+    processed = postcss(plugins).process styles
+    processed.warnings().forEach (w)-> log red w.toString()
+    writeFile "public/styles.css", processed.css
+  catch error
+    err "CSS Syntax Error", error.toString()
 
 
 # TASKS ###########################################################################################

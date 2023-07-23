@@ -1,5 +1,112 @@
+:root {
+  --sans: 'Montserrat', sans-serif;
+  --serif: Georgia, Times, serif;
+  --title: 'Vollkorn', serif;
+
+  --black: color(display-p3 0.15 0.1 0);
+  --off-black: color(display-p3 0.25 0.2 0);
+  --yellow: color(display-p3 1 0.8 0);
+}
+
 html {
+  height: 100%;
+  padding: .5em;
+  font-size: 16px;
+  font-family: var(--serif);
+  color: var(--black);
+  background-color: var(--yellow);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
   padding: 1em;
+  padding-bottom: 10vh; /* Bias the vertical center toward the top as the page height grows */
+  font-size: min(1rem + .5vw, 1.6rem);
+  background: white;
+}
+
+@media(max-width: 600px) {
+  body {
+    align-items: flex-start;
+    padding: 1em;
+    padding-top: 3em;
+  }  
+}
+
+main {
   margin: 0 auto;
-  max-width: 48em;
+  width: 100%;
+  max-width: 33.2em;
+}
+
+h1, h2 {
+  text-align: center;
+  color: var(--off-black);
+}
+
+h1 {
+  padding: .2em 0 0;
+  font-family: var(--title);
+  font-size: min(.8rem + 3.5vw, 4rem);
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: min(.6rem + 1.5vw, 2rem);
+}
+
+p {
+  padding: .75em 0;
+  line-height: 1.5;
+}
+
+form {
+  margin-top: 7vh;
+  text-align: center;
+}
+
+form > div {
+  display: inline-block;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-left: .55em;
+  margin-bottom: .2em;
+}
+
+input {
+  padding: .2em .4em;
+  border-radius: 6px;
+  border: .15em solid var(--yellow);
+}
+
+input[type="text"] {
+  display: inline-block;
+  margin-right: .5em;
+  width: 15em;
+  max-width: 100%;
+}
+
+input[type="submit"] {
+  background: var(--yellow);
+  cursor: pointer;
+}
+
+@media(max-width: 450px) {
+  form > div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+  }
+
+  label {
+    margin: 0;
+  }
 }
