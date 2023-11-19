@@ -17,3 +17,6 @@ Run `cake start` to work on the project locally on your computer.
 When linking to a page, don't include the `.html`
 * Good: `<a href="/about">`
 * Bad: `<a href="/about.html">`
+
+
+
