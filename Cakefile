@@ -21,6 +21,12 @@ task "build", "Compile everything", ()->
   # Folders
   rm "public"
 
+  # Assets
+  for p in glob.sync "source/**/*.!(html|scss|coffee)"
+    dest = p.replace("source/", "public/")
+    mkdir dest.split("/")[...-1].join("/")
+    Compilers.static p, dest, quiet: true
+
   # Pages
   template = readFile "source/pages/_template.html"
   for p in glob.sync "source/pages/**/[!_]*.html"

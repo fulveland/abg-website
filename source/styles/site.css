@@ -63,6 +63,10 @@ p {
   line-height: 1.5;
 }
 
+strong {
+  font-weight: bolder;
+}
+
 form {
   margin-top: 7vh;
   text-align: center;
