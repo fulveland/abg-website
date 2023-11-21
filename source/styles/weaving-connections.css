@@ -1,10 +1,118 @@
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.nav p{
+    
+}
+
 .workshop {
+    margin: 0 0 3em 0;
+    display: flex;
+    gap: 20px;
+    font-size: .75em;
+}
 
+h2.time-of-day{
+    font-size: 60px;
+}
+h2.day{
+    font-size:100px;
+}
 
+.workshop .workshop-title {
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+
+}
+
+.workshop .teacher-name {
+    margin: 0;
+    padding: 0;
+}
+
+.workshop .description {
+    /* flex-shrink: 1.5;
+    flex-grow: 1; */
+    order: 2;
+    flex-basis: 450px;
+    align-self:center;
+}
+
+.workshop .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+    flex-basis: 150px;
+    align-content: center;
 }
 
 .workshop img {
-
-    
-    
+    margin: 0 0 10px 0;
+    width: auto;
+    height: auto;
+    align-self:center;
 }
+
+.workshop .description .details{
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.workshop .description .details p {
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1em 0 0;
+    margin: 0;   
+}
+
+
+/* 
+.workshop {
+    font-size: .9em;
+    font-size: min(1rem + .5vw, 1.6rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.workshop .workshop-title {
+        font-weight: bolder;
+        margin: 0;
+        padding: 0;
+}
+
+.workshop .teacher-name {
+    margin: 0;
+    padding: 0;
+}
+
+.workshop .description {
+    flex-basis: 500px; 
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.workshop .gallery{
+    flex-basis: 250px; 
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.workshop img {
+    margin: 10px 0 10px 0;    
+} */
+
+  
