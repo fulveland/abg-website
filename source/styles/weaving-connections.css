@@ -82,3 +82,41 @@
     gap: 1em;
     margin-top: 1em;
 }
+
+/* 
+transform: translate y axis
+
+-margins */
+
+/*
+Meals
+*/
+#meals {
+    gap: 1em;
+    margin-bottom: 5em;
+}
+
+#meals > img {
+    max-width: 20em;
+    margin: auto;
+    margin-top: 2em;
+}
+
+#meals .gallery img {
+    border-radius: 100%;
+}
+#meals .gallery {
+    flex: 0 1 20em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin: 2.6em 0 2em 0;
+}
+
+#meals .gallery div {
+    flex: 1 1 1em;
+}
+
+#meals .gallery img {
+    border-radius: 100%;
+}
