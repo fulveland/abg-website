@@ -18,7 +18,6 @@ h1 {
     max-width: 48ch;
     margin: 0 auto;
     padding: 0.35em 0;
-    font-size: 0.9em;
 }
 
 .registration-link {
@@ -79,7 +78,7 @@ nav a {
     font-size: 1rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .workshop {
         display: block;
     }
@@ -100,7 +99,7 @@ nav a {
     flex: 1 1 33%;
 } */
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .workshop .gallery {
         flex: 1 1 auto;
         margin-bottom: 1em;
@@ -109,6 +108,8 @@ nav a {
 
 .workshop .gallery img {
     width: 100%;
+    border: 0.6em solid var(--off-white);
+    border-radius: 2px;
 }
 
 .workshop .description {
@@ -122,12 +123,13 @@ nav a {
 }
 
 .workshop .description .details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    margin-top: 1em;
+    padding: 0;
 }
 
+.workshop .description .seats-left {
+    margin-top: 1em;
+    font-style: italic;
+}
 /* 
 transform: translate y axis
 
@@ -137,31 +139,43 @@ transform: translate y axis
 Meals
 */
 #meals {
-    gap: 1em;
     margin-bottom: 5em;
 }
 
-#meals > a img {
-    max-width: 20em;
-    margin: auto;
-    margin-top: 2em;
-}
-
 #meals .gallery img {
     border-radius: 100%;
+    border: 0.2em solid var(--off-white);
 }
+
 #meals .gallery {
-    flex: 0 1 20em;
     display: flex;
-    gap: 1em;
     align-items: center;
-    margin: 2.6em 0 2em 0;
+    max-width: 48ch;
+    margin: 2.6em auto 2em;
+    padding-left: 2em;
 }
 
-#meals .gallery div {
+#meals .gallery a {
+    order: 3;
     flex: 1 1 1em;
+    margin-left: -2em;
 }
 
-#meals .gallery img {
-    border-radius: 100%;
+#meals .gallery a.m3 {
+    z-index: 2;
+}
+
+#meals .gallery a.m4 {
+    z-index: 1;
+}
+
+#meals .description p {
+    max-width: 48ch;
+    margin: 0 auto;
+    padding: 0.35em 0;
+}
+
+#meals .poster img {
+    max-width: 48ch;
+    margin: 2em auto 0;
 }
