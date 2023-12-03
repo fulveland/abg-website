@@ -39,8 +39,9 @@ task "build", "Compile everything", ()->
     content = template.replace "PAGE CONTENT GOES HERE", content
     writeFile dest, content
 
-  # Styles
+  # Global Styles
   styles = glob.sync "source/styles/**/*.css"
+               .sort()
                .map readFile
                .join "\n\n"
   try
