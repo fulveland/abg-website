@@ -2,6 +2,11 @@ html {
     background: white;
 }
 
+body {
+    font-size: clamp(1rem, 0.8rem + 0.5vw, 1.6rem);
+    /* font-size: min(1rem + 0.5vw, 1.6rem); */
+}
+
 h1 {
     margin-top: 2em;
 }
@@ -62,20 +67,24 @@ nav a {
     top: 0;
     padding: 0.25em 0;
     font-size: 2em;
-    background: var(--off-white);
+    background: color(display-p3 1 0.98 0.96);
+    z-index: 2;
 }
 
 .time-of-day {
-    margin: 1em 0 2em;
-    font-size: 1.5em;
+    position: sticky;
+    top: 2.2em;
+    margin: 0 0 0;
+    padding: 0.5em 0;
+    font-size: 1.4em;
+    background: var(--off-white);
 }
 
 .workshop {
     display: flex;
     gap: 1em;
     align-items: center;
-    margin-bottom: 6em;
-    font-size: 1rem;
+    margin: 3em 0 6em;
 }
 
 @media (max-width: 600px) {
@@ -122,8 +131,8 @@ nav a {
 .workshop .description .teacher-name {
 }
 
-.workshop .description .details {
-    padding: 0;
+.workshop .description .details span {
+    display: inline-block;
 }
 
 .workshop .description .seats-left {
@@ -177,5 +186,12 @@ Meals
 
 #meals .poster img {
     max-width: 48ch;
+    width: 100%;
     margin: 2em auto 0;
+}
+
+#accommodations p {
+    max-width: 48ch;
+    margin: 0 auto;
+    padding: 0.35em 0;
 }
