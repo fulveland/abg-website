@@ -211,6 +211,14 @@ transform: translate y axis
 -margins */
 
 /*
+Keynote
+*/
+#keynote .description p {
+    max-width: 48ch;
+    margin: 0 auto;
+}
+
+/*
 Meals
 */
 #meals {
