@@ -9,7 +9,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: minmax(9em, auto) repeat(6, minmax(1em, 1fr));
-    grid-template-rows: 2em 2em repeat(17, 2em);
+    grid-template-rows: 2em 2em repeat(16, 2em);
     grid-row-gap: 0.5em;
     grid-column-gap: 0.18em;
 }
@@ -311,6 +311,7 @@
     margin-right: var(--mar);
 }
 
+/* 
 .schedule-grid div.ribbed-basket {
     grid-row: 16 / span 1;
 }
@@ -318,10 +319,11 @@
     grid-column: 6 / span 2;
     margin-left: var(--mar);
     margin-right: var(--mar);
-}
+} 
+*/
 
 .schedule-grid div.it-could-be-willow {
-    grid-row: 17 / span 1;
+    grid-row: 16 / span 1;
 }
 .schedule-grid div.it-could-be-willow + .bubble {
     grid-column: 6 / span 2;
@@ -330,7 +332,7 @@
 }
 
 .schedule-grid div.willow-garden-bee-skep {
-    grid-row: 18 / span 1;
+    grid-row: 17 / span 1;
 }
 .schedule-grid div.willow-garden-bee-skep + .bubble {
     grid-column: 6 / span 2;
