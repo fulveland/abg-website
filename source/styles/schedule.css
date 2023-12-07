@@ -166,7 +166,7 @@
     background-color: #ffffff;
     padding: 0em 0.5em 0 0;
     /* margin: auto 0; */
-    justify-content: end;
+    justify-content: flex-end;
     /* align-content: center; */
 }
 
