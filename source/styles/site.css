@@ -3,9 +3,13 @@
     --serif: Georgia, Times, serif;
     --title: "Vollkorn", serif;
 
-    --black: color(display-p3 0.15 0.1 0);
+    --black: #181315;
+    --background-white: #fffffd;
+    /* --black: color(display-p3 0.15 0.1 0); */
     --off-black: color(display-p3 0.25 0.2 0);
-    --off-white: color(display-p3 0.9 0.89 0.88);
+
+    --off-white: #f0efe7;
+    /* --off-white: color(display-p3 0.9 0.89 0.88); */
     --yellow: color(display-p3 1 0.8 0);
 }
 
@@ -26,7 +30,7 @@ body {
     padding: 1em;
     padding-bottom: 10vh; /* Bias the vertical center toward the top as the page height grows */
     font-size: min(1rem + 0.5vw, 1.6rem);
-    background: white;
+    background: var(--background-white);
 }
 
 @media (max-width: 600px) {
