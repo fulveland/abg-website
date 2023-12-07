@@ -1,5 +1,5 @@
 html {
-    background: white;
+    background: var(--background-white);
 }
 
 body {
@@ -99,8 +99,14 @@ h1 {
 .registration-link a {
     padding: 0.6em 1em;
     border-radius: 8px;
-    background: var(--off-white);
+    background-color: #4d562c;
+    /* background-color: #555075; */
+    /* background-color: #a3882b; */
+    /* background: var(--off-white); */
     cursor: pointer;
+    /* color: #40240e; */
+    /* color: #321904; */
+    color: var(--off-white);
 }
 
 nav {
@@ -110,7 +116,8 @@ nav {
     margin: 4em 0 1em;
     padding: 1.5em;
     color: var(--off-white);
-    background-color: color(display-p3 0.46 0.373 0.322);
+    background-color: #675026;
+    /* background-color: color(display-p3 0.46 0.373 0.322); */
 }
 
 nav a {
@@ -133,7 +140,9 @@ nav a {
     top: 0;
     padding: 0.25em 0;
     font-size: 2em;
-    background: color(display-p3 1 0.98 0.96);
+    background-color: #fffff9;
+
+    /* background: color(display-p3 1 0.98 0.96); */
     z-index: 2;
 }
 
