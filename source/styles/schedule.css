@@ -202,18 +202,19 @@
     text-align: center;
 }
 
-.schedule-grid div.mushroom-basket {
+.schedule-grid div.three-bird-feeders {
     grid-row: 3 / span 1;
 }
-.schedule-grid div.mushroom-basket + .bubble {
+
+.schedule-grid div.three-bird-feeders + .bubble {
     grid-column: 2 / span 1;
     margin-left: var(--mar);
 }
 
-.schedule-grid div.three-bird-feeders {
+.schedule-grid div.mushroom-basket {
     grid-row: 4 / span 1;
 }
-.schedule-grid div.three-bird-feeders + .bubble {
+.schedule-grid div.mushroom-basket + .bubble {
     grid-column: 3 / span 1;
     margin-right: var(--mar);
 }
