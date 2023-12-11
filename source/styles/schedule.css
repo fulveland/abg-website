@@ -219,20 +219,20 @@
     margin-right: var(--mar);
 }
 
-.schedule-grid div.willow-laundry-basket {
+.schedule-grid div.catalan-base-basket {
     grid-row: 5 / span 1;
 }
-.schedule-grid div.willow-laundry-basket + .bubble {
-    grid-column: 2 / span 4;
+.schedule-grid div.catalan-base-basket + .bubble {
+    grid-column: 2 / span 2;
     margin-left: var(--mar);
     margin-right: var(--mar);
 }
 
-.schedule-grid div.catalan-base-basket {
+.schedule-grid div.willow-laundry-basket {
     grid-row: 6 / span 1;
 }
-.schedule-grid div.catalan-base-basket + .bubble {
-    grid-column: 2 / span 2;
+.schedule-grid div.willow-laundry-basket + .bubble {
+    grid-column: 2 / span 4;
     margin-left: var(--mar);
     margin-right: var(--mar);
 }
@@ -245,16 +245,32 @@
     margin-left: var(--mar);
 }
 
-.schedule-grid div.willow-wreath-with-wried-flowers {
+.schedule-grid div.living-willow-structure-1 {
     grid-row: 8 / span 1;
+}
+.schedule-grid div.living-willow-structure-1 + .bubble {
+    grid-column: 4 / span 1;
+    margin-left: var(--mar);
+}
+
+.schedule-grid div.willow-wreath-with-wried-flowers {
+    grid-row: 9 / span 1;
 }
 .schedule-grid div.willow-wreath-with-wried-flowers + .bubble {
     grid-column: 5 / span 1;
     margin-right: var(--mar);
 }
 
+.schedule-grid div.open-weave {
+    grid-row: 10 / span 1;
+}
+.schedule-grid div.open-weave + .bubble {
+    grid-column: 5 / span 1;
+    margin-right: var(--mar);
+}
+
 .schedule-grid div.birch-bark-crazy-quilt-jewelry {
-    grid-row: 9 / span 1;
+    grid-row: 11 / span 1;
 }
 .schedule-grid div.birch-bark-crazy-quilt-jewelry + .bubble {
     grid-column: 4 / span 2;
@@ -262,30 +278,13 @@
     margin-right: var(--mar);
 }
 
-.schedule-grid div.diagonal-weave-bark-pouch {
-    grid-row: 10 / span 1;
-}
-.schedule-grid div.diagonal-weave-bark-pouch + .bubble {
-    grid-column: 4 / span 2;
-    margin-left: var(--mar);
-    margin-right: var(--mar);
-}
-
 .schedule-grid div.fitched-round-basket {
-    grid-row: 11 / span 1;
+    grid-row: 12 / span 1;
 }
 .schedule-grid div.fitched-round-basket + .bubble {
     grid-column: 4 / span 2;
     margin-left: var(--mar);
     margin-right: var(--mar);
-}
-
-.schedule-grid div.living-willow-structure-1 {
-    grid-row: 12 / span 1;
-}
-.schedule-grid div.living-willow-structure-1 + .bubble {
-    grid-column: 6 / span 1;
-    margin-left: var(--mar);
 }
 
 .schedule-grid div.mini-baskets {
@@ -296,19 +295,20 @@
     margin-left: var(--mar);
 }
 
-.schedule-grid div.living-willow-structure-2 {
+.schedule-grid div.willow-flower-with-dom {
     grid-row: 14 / span 1;
 }
-.schedule-grid div.living-willow-structure-2 + .bubble {
+.schedule-grid div.willow-flower-with-dom + .bubble {
     grid-column: 7 / span 1;
     margin-right: var(--mar);
 }
 
-.schedule-grid div.willow-flower-with-dom {
+.schedule-grid div.diagonal-weave-bark-pouch {
     grid-row: 15 / span 1;
 }
-.schedule-grid div.willow-flower-with-dom + .bubble {
-    grid-column: 7 / span 1;
+.schedule-grid div.diagonal-weave-bark-pouch + .bubble {
+    grid-column: 6 / span 2;
+    margin-left: var(--mar);
     margin-right: var(--mar);
 }
 
