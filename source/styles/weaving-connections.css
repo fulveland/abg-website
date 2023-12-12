@@ -210,6 +210,13 @@ nav a {
     display: inline-block;
 }
 
+.beginner {
+    display: inline-block;
+    padding: 0.5em;
+    margin-top: 1em;
+    background-color: var(--light-pastel-green);
+}
+
 .workshop .description .seats-left {
     margin-top: 1em;
     font-style: italic;

@@ -11,6 +11,9 @@
     --off-white: #f0efe7;
     /* --off-white: color(display-p3 0.9 0.89 0.88); */
     --yellow: color(display-p3 1 0.8 0);
+
+    --light-pastel-green: hsl(104, 65%, 93%);
+    --pastel-blue: #b9edec;
 }
 
 html {
