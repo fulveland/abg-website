@@ -9,7 +9,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: minmax(9em, auto) repeat(6, minmax(1em, 1fr));
-    grid-template-rows: 2em 2em repeat(17, 2em);
+    grid-template-rows: 2em 2em repeat(18, 2em);
     grid-row-gap: 0.5em;
     grid-column-gap: 0.18em;
 }
@@ -261,10 +261,10 @@
     margin-right: var(--mar);
 }
 
-.schedule-grid div.open-weave {
+.schedule-grid div.willow-dragon-fly {
     grid-row: 10 / span 1;
 }
-.schedule-grid div.open-weave + .bubble {
+.schedule-grid div.willow-dragon-fly + .bubble {
     grid-column: 5 / span 1;
     margin-right: var(--mar);
 }
@@ -335,6 +335,14 @@
 .schedule-grid div.willow-garden-bee-skep + .bubble {
     grid-column: 6 / span 2;
     margin-left: var(--mar);
+    margin-right: var(--mar);
+}
+
+.schedule-grid div.open-weave {
+    grid-row: 19 / span 1;
+}
+.schedule-grid div.open-weave + .bubble {
+    grid-column: 2 / span 6;
     margin-right: var(--mar);
 }
 
