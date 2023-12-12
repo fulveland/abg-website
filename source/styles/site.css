@@ -101,7 +101,7 @@ input {
     border: 0.15em solid var(--yellow);
 }
 
-input[type="text"] {
+input[type="email"] {
     display: inline-block;
     margin-right: 0.5em;
     width: 15em;
