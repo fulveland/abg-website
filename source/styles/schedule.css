@@ -344,6 +344,7 @@
 .schedule-grid div.open-weave + .bubble {
     grid-column: 2 / span 6;
     margin-right: var(--mar);
+    margin-left: var(--mar);
 }
 
 /* 

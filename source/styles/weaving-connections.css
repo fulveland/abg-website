@@ -3,71 +3,6 @@ html {
 }
 
 body {
-    /*
-        clamp() is a function that takes 3 arguments:
-        1. a lower limit
-        2. some value that is going to be clamped
-        3. an upper limit
-        The result of the function is going to be the value (2.),
-        but limited so that it never goes below the lower limit (1.)
-        or above the upper limit (3.).
-        
-        So for the font size, what we currently have is:
-        1. never go smaller than 1rem
-        2. try to be .8rem + 0.5vw
-        3. never go bigger than 1.2rem
-
-        rem units are relative to the font size of the root-most
-        element in the DOM. In our case, that's the font-size
-        set on the html element rule in site.css (16px)
-        1rem = 1 x 16px
-        0.8rem = 0.8 x 16px
-        1.2rem = 1.2 x 16px
-
-        vw units are relative to the "viewport width", which
-        in our case means the width of the browser window.
-        100vw is the full width of the window.
-        1vw is 1/100th (or 1%) of the full width of the window.
-
-        so that middle value in the clamp,
-        0.8rem + 0.5vw
-        is like saying
-        (0.8 x 16px) + (window width ÷ 200)
-        
-        So the 0.8rem part is a fixed value
-        (doesn't change with the size of the window),
-        and the 0.5vw part scales as the window gets wider.
-        
-        If you increase the 0.5vw part, the font size will
-        scale more dramatically as you resize the window.
-        If you double it (so: 1vw), the font size will grow
-        twice as fast as before when the window gets wider.
-        If you set the 0.5vw to 0vw, the font size won't scale at all.
-        If you set it to a negative number, the font will shrink
-        as the window gets wider.
-
-        If you increase the 0.8rem value, the font will be bigger
-        at all window sizes. If you set it to 0rem, the font
-        will be smaller, and it will be exactly 0px when the window
-        is 0px wide (which is impossible, but worth thinking about).
-        If you set it to a negative value (say, -1em), the font will
-        be even smaller at all sizes, and will be 0px even when the
-        browser window is a bigger size.
-
-        If you want to go look at some graphs, the formula here is
-        y = mx + b (which you might have seen in high school math).
-        Search for "slope of a line" and you'll see that formula.
-
-        The 0.8em is `b`, the 0.5vw is `m`, the width
-        of the browser window is `x`, and the font size is `y`.
-
-        If all of this is too complicated, it's totally fine to just
-        change the font-size rule to a static value like 1rem,
-        and then add some media queries to scale it up as the
-        browswer gets wider.
-
-    */
-
     font-size: clamp(1rem, 0.8rem + 0.5vw, 1.1rem);
     /* font-size: clamp(1rem, 0.8rem + 0.5vw, 1.6rem); */
     /* font-size: min(1rem + 0.5vw, 1.6rem); */
@@ -97,6 +32,7 @@ h1 {
 }
 
 .registration-link a {
+    display: inline-block;
     padding: 0.6em 1em;
     border-radius: 8px;
     background-color: #4d562c;
