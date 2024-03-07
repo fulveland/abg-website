@@ -12,8 +12,27 @@
     /* --off-white: color(display-p3 0.9 0.89 0.88); */
     --yellow: color(display-p3 1 0.8 0);
 
-    --light-pastel-green: hsl(104, 65%, 93%);
     --pastel-blue: #b9edec;
+
+    /* --header: #f3af76;
+    --main: #fae37d;
+    --green: #6ebbb4;
+    --rose-front: #7164c4;
+    --rose-back: #8881b4;
+    --gray: #98938f; */
+
+    --header: #dfb997;
+    --main: #d28592;
+    --green: #658d8a;
+    --tent-front: #736c9c;
+    --tent-back: #736c9c;
+    --gray: #98938f;
+
+    /* --header: #f9d9ad;
+    --main: #a8c4fa;
+    --green: #d6fdc6;
+    --rose-front: #f2c1c9;
+    --rose-back: #e99aa7; */
 }
 
 html {

@@ -176,6 +176,35 @@ nav a {
     margin-top: 1em;
     font-style: italic;
 }
+
+/** CLASS ROOM COLOURS **/
+
+.room {
+    display: inline-block;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+.header {
+    background-color: var(--header);
+}
+
+.main {
+    background-color: var(--main);
+}
+
+.green-room {
+    background-color: var(--green);
+}
+
+.tent-front {
+    background-color: var(--tent-front);
+}
+
+.tent-back {
+    background-color: var(--tent-back);
+}
+
 /* 
 transform: translate y axis
 
