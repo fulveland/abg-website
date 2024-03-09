@@ -256,7 +256,7 @@
 .schedule-grid div.pine-needle-coiling + .bubble {
     grid-column: 4 / span 1;
     margin-left: var(--mar);
-    background-color: var(--main);
+    background-color: var(--header);
 }
 
 .schedule-grid div.pine-needle-coiling-pm {
@@ -265,7 +265,7 @@
 .schedule-grid div.pine-needle-coiling-pm + .bubble {
     grid-column: 5 / span 1;
     margin-right: var(--mar);
-    background-color: var(--main);
+    background-color: var(--header);
 }
 
 .schedule-grid div.willow-wreath-with-wried-flowers {
@@ -293,7 +293,7 @@
     grid-column: 4 / span 2;
     margin-left: var(--mar);
     margin-right: var(--mar);
-    background-color: var(--gray);
+    background-color: var(--main);
 }
 
 .schedule-grid div.fitched-round-basket {
