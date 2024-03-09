@@ -303,7 +303,7 @@
     grid-column: 4 / span 2;
     margin-left: var(--mar);
     margin-right: var(--mar);
-    background-color: var(--header);
+    background-color: var(--main);
 }
 
 .schedule-grid div.mini-baskets {
