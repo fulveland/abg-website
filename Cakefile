@@ -1,66 +1,33 @@
-fs = require "fs"
-glob = require "glob"
 require "sweetbread"
 
-# Borrowing these from Sweetbread
-autoprefixer = require "autoprefixer"
-postcss = require "postcss"
-
-
-overrideBrowserslist = "last 2 Chrome versions, last 2 ff versions, last 2 Safari versions, last 2 iOS versions"
-plugins = [autoprefixer {overrideBrowserslist}]
-
-
-readFile = (filePath)-> fs.readFileSync(filePath).toString()
-writeFile = (filePath, content)-> fs.writeFileSync filePath, content
-
+task "start", "Build, watch, and serve.", ()->
+  invoke "build"
+  invoke "watch"
+  invoke "serve"
 
 task "build", "Compile everything", ()->
   dev = not process.env.NETLIFY
 
-  # Folders
   rm "public"
 
-  # Assets
-  for p in glob.sync "source/**/*.!(html|scss|coffee)"
-    dest = p.replace("source/", "public/")
-    mkdir dest.split("/")[...-1].join("/")
-    Compilers.static p, dest, quiet: true
+  compile "static", "source/**/*.!(html|scss|coffee)", (path)->
+    copy path, replace path, "source/": "public/"
 
-  # Pages
-  template = readFile "source/pages/_template.html"
-  for p in glob.sync "source/pages/**/[!_]*.html"
-    content = readFile p
-    dest = p.replace("source/pages","public")
-    dest = dest.replace(".html", "/index.html") unless dest.endsWith "index.html"
-
-    mkdir dest.replace "/index.html", ""
-
+  template = read "source/pages/_template.html"
+  compile "pages", "source/pages/**/[!_]*.html", (path)->
+    content = read path
+    dest = replace path,
+      "source/pages": "public"
+      ".html": "/index.html"
+      "/index/": "/" # fixes /index/index.html
     content = template.replace "PAGE CONTENT GOES HERE", content
-    writeFile dest, content
+    write dest, content
 
-  # Global Styles
-  styles = glob.sync "source/styles/**/*.css"
-               .sort()
-               .map readFile
-               .join "\n\n"
-  try
-    processed = postcss(plugins).process styles
-    processed.warnings().forEach (w)-> log red w.toString()
-    writeFile "public/styles.css", processed.css
-  catch error
-    err "CSS Syntax Error", error.toString()
-
-
-# TASKS ###########################################################################################
+  compile "global styles", ()->
+    write "public/styles.css", concat readAll "source/styles/**/*.css"
 
 task "watch", "Recompile on changes.", ()->
   watch "source", "build", reload
 
 task "serve", "Spin up a live reloading server.", ()->
   serve "public"
-
-task "start", "Build, watch, and serve.", ()->
-  doInvoke "build"
-  doInvoke "watch"
-  doInvoke "serve"
