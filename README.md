@@ -2,7 +2,25 @@
 
 ### Building
 
+#### Terminal tab 1
+Run Ivan's special shortcut `cds` to cd into your sites folder. Then run `cd abg-future` to cd into the abg-future folder.    
+	*cd means change directory
+
 Run `cake start` to work on the project locally on your computer.
+
+#### Terminal tab 2
+Run Ivan's special shortcut `cds` to cd into your sites folder. Then run `cd abg-future` to cd into the abg-future folder.    
+	*cd means change directory
+
+
+Run `git s` to see the *status* of your git repo
+
+Run `git aa` to *stage* all changed files
+- Advanced: You can also stage just some of the files
+
+Run `git cim "my message"` to commit all staged files
+
+Run `git push` to push all commits to github
 
 ### Folder structure
 
