@@ -68,8 +68,6 @@ nav a {
     margin-top: 2em;
 }
 
-.day {
-}
 
 .dayname {
     position: sticky;
@@ -153,12 +151,6 @@ nav a {
 
 .workshop .description {
     flex-basis: 450px;
-}
-
-.workshop .description .workshop-title {
-}
-
-.workshop .description .teacher-name {
 }
 
 .workshop .description .details span {
