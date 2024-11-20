@@ -13,3 +13,8 @@ input, button, textarea, select {
   font: inherit;
 }
 
+.container{
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax (100px 1fr));
+}

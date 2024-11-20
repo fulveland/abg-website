@@ -148,3 +148,28 @@ input[type="submit"] {
         margin: 0;
     }
 }
+
+.container{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1em;
+    padding: 5em 0em 1em 0em;
+  }
+
+.container div{
+    align-self: center;    
+}
+
+.container div img{
+    padding: .5em 0;
+}
+
+.container img{
+    align-self: center;
+}  
+.container p{
+    align-self: center;
+}
+
+
