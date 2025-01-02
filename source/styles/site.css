@@ -157,6 +157,8 @@ input[type="submit"] {
     padding: 5em 0em 1em 0em;
   }
 
+
+
 .container div{
     align-self: center;    
 }
@@ -173,3 +175,10 @@ input[type="submit"] {
 }
 
 
+.less-pad{
+    padding: 2em 0 0 0;
+}
+
+.less-pad-top{
+    padding: 5em 0 0 0;
+}
